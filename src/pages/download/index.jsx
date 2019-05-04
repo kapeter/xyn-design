@@ -4,13 +4,13 @@ import './index.less'
 
 import footerGIF from '../../assets/img/footer-3.gif'
 import banner from '../../assets/img/download-banner.jpg'
-import download1 from '../../assets/img/download-1.png'
-import download2 from '../../assets/img/download-2.png'
-import download3 from '../../assets/img/download-3.png'
-import download4 from '../../assets/img/download-4.png'
-import download5 from '../../assets/img/download-5.png'
-import download6 from '../../assets/img/download-6.png'
-import downloadBtn from '../../assets/img/download-btn.png'
+import download1 from './img/download-1.png'
+import download2 from './img/download-2.png'
+import download3 from './img/download-3.png'
+import download4 from './img/download-4.png'
+import download5 from './img/download-5.png'
+import download6 from './img/download-6.png'
+import downloadBtn from './img/download-btn.png'
 
 
 class Download extends React.Component {

@@ -1,12 +1,54 @@
 .character{
     .content{
         width: 1200px;
-        margin: 0 auto;
-        padding: 80px 0;
+        margin: 10px auto;
+        padding-top: 150px;
         min-height: calc(100vh - 258px);
+        position: relative;
+        .all-bg{
+            width: 100%;
+        }
+        .hover-img{
+            position: absolute;
+            z-index: 10;
+            opacity: 0;
+            transition: all .25s ease-out;
+            &:hover{
+                opacity: 1;
+                cursor: pointer;
+            }
+        }
+        .tip{
+            left: 0;
+            bottom: 20px;
+            position: absolute;
+            width: 100%;
+            font-size: 12px;
+            text-align: center;
+            color: #666666;
+        }
     }
     .footer{
         background: #464546;
         height: 140px;
     } 
+    .character-box{
+        width: 650px;
+        padding: 15px 30px;
+        .pic{
+            height: 375px;
+            text-align: center;
+            margin-bottom: 30px;
+            img{
+                height: 100%;
+            }
+        }
+        .desc{
+            font-size: 14px;
+            color: #FFFFFF;
+            letter-spacing: -0.9px;
+            text-align: justify;
+            line-height: 26px;
+        }
+    }
 }

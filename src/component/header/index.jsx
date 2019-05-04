@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 import './index.less'
 
 class Header extends React.Component {
@@ -7,12 +7,13 @@ class Header extends React.Component {
         return (
             <header className="header clearfix">
                 <div className="logo">
+                    <Link to="/" className="logo-link"></Link>
                 </div>
                 <nav className="nav">
-                    <NavLink to="/character" className="link">Character</NavLink>
-                    <NavLink to="/story" className="link">Story</NavLink>
-                    <NavLink to="/activity" className="link">Activity</NavLink>
-                    <NavLink to="/contact" className="link">Contact</NavLink>
+                    <NavLink to="/character" className="link character-link"></NavLink>
+                    <NavLink to="/story" className="link story-link"></NavLink>
+                    <NavLink to="/activity" className="link activity-link"></NavLink>
+                    <NavLink to="/contact" className="link contact-link"></NavLink>
                 </nav>
             </header>
         )

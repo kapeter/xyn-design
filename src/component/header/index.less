@@ -4,16 +4,70 @@
     top: 0;
     width: 100%;
     box-sizing: border-box;
-    padding: 50px 80px;
-    z-index: 10;
+    padding: 40px 80px;
+    z-index: 100;
     .logo{
         float: left;
+        .logo-link{
+            display: block;
+            width: 53px;
+            height: 68px;
+            background-image: url("./img/logo.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            &:hover{
+                background-image: url("./img/logo-hover.png");
+            }
+        }
     }
     .nav{
         float: right;
+        padding-top: 10px;
         .link{
             display: inline-block;
-            margin: 0 25px;
+            margin: 0 20px;
+            width: 92px;
+            height: 32px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .character-link{
+            background-image: url("./img/menu-1.png");
+            &:hover{
+                background-image: url("./img/menu-1-hover.png");
+            }
+        }
+        .character-link.active{
+            background-image: url("./img/menu-1-active.png");
+        }
+        .story-link{
+            background-image: url("./img/menu-2.png");
+            &:hover{
+                background-image: url("./img/menu-2-hover.png");
+            }
+        }
+        .story-link.active{
+            background-image: url("./img/menu-2-active.png");
+        }
+        .activity-link{
+            background-image: url("./img/menu-3.png");
+            &:hover{
+                background-image: url("./img/menu-3-hover.png");
+            }
+        }
+        .activity-link.active{
+            background-image: url("./img/menu-3-active.png");
+        }
+        .contact-link{
+            background-image: url("./img/menu-4.png");
+            &:hover{
+                background-image: url("./img/menu-4-hover.png");
+            }
+        }
+        .contact-link.active{
+            background-image: url("./img/menu-4-active.png");
         }
     }
 }

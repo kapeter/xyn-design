@@ -3,6 +3,7 @@ import Header from '../../component/header'
 import './index.less'
 
 import footerGIF from '../../assets/img/footer-3.gif'
+import avatar from "../../assets/img/avatar.png"
 
 class Contact extends React.Component {
     render() {
@@ -21,6 +22,7 @@ So far there is no such a discussion in children’s pedagogical context about a
                         </p>
                     </div>
                     <div className="avatar">
+                        <img src={avatar} />
                     </div>
                 </section>
                 <footer className="footer">

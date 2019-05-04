@@ -1,14 +1,35 @@
 .index{
-    .content{
-        width: 1200px;
-        margin: 0 auto;
-        padding: 80px 0;
-        min-height: calc(100vh - 280px);
-    }
+    width: 100%;
+    height: 100vh;
     .footer{
         img{
             display: block;
             width: 1200px;
         }
     } 
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+        .swiper-slide{
+            position: relative;
+            .main-banner{
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            .content{
+                width: 1200px;
+                margin: 0 auto;
+                font-size: 20px;
+                color: #000000;
+                letter-spacing: -0.92px;
+                line-height: 36px;
+            }
+        }
+    }
 }

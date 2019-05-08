@@ -5,6 +5,9 @@ import './index.less'
 import footerGIF from '../../assets/img/footer-2.gif'
 
 class StoryFour extends React.Component {
+    constructor(props) {
+        super(props);
+    }
     render() {
         return (
             <div className="story-content story-four">

@@ -1,9 +1,9 @@
 .character{
+    position: relative;
     .content{
         width: 1200px;
         margin: 10px auto;
         padding-top: 150px;
-        min-height: calc(100vh - 258px);
         position: relative;
         .all-bg{
             width: 100%;
@@ -29,8 +29,30 @@
         }
     }
     .footer{
-        background: #464546;
-        height: 140px;
+        width: 100%;
+        height: 100px;
+        position: relative;
+        .footer-link{
+            position: absolute;
+            right: 128px;
+            top: 50px;
+            display: block;
+            img{
+                width: 12px;
+                float: left;
+                display: block;
+                margin-top: 2px;
+                margin-right: 5px;
+            }
+            span{
+                display: block;
+                float: left;
+                font-size: 14px;
+                color: #4A4A4A;
+                text-align: left;
+                line-height: 20px;
+            }
+        }
     } 
     .character-box{
         width: 650px;

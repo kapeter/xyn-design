@@ -36,27 +36,20 @@
             text-decoration: none;
         }
     }
-    .footer{
-        width: 1200px;
-        margin: 0 auto;
-        img{
-            display: block;
-            width: 1200px;
-        }
-    } 
 }
 
 .activity-content{
     background: #000000;
     color: #ffffff;
+    padding-top: 145px;
     .para-content{
-        width: 1200px;
+        width: 1440px;
         margin: 0 auto;
         position: relative;
-        letter-spacing: -0.94px;
-        text-align: justify;
-        line-height: 29px;
-        font-size: 17px;
+        img{
+            display: block;
+            width: 100%;
+        }
     }
     .banner{
         padding-top: 145px;
@@ -76,10 +69,113 @@
             line-height: 25px;
         }
     }
+    .material-download{
+        padding: 50px 0 150px;
+        .title{
+            padding: 0 150px;
+            font-size: 30px;
+            margin-bottom: 50px;
+            img{
+                display: inline-block;
+                width: 185px;
+            }
+            span{
+                margin-left: 30px;
+                vertical-align: bottom;
+            }
+        }
+        .material-list{
+            padding: 0 150px;
+            position: relative;
+            .download-link{
+                position: absolute;
+                right: 150px;
+                bottom: 0;
+                display: block;
+                img{
+                    width: 12px;
+                    float: left;
+                    display: block;
+                    margin-top: 2px;
+                    margin-right: 5px;
+                }
+                span{
+                    display: block;
+                    float: left;
+                    font-size: 14px;
+                    color: #ffffff;
+                    text-align: left;
+                    line-height: 20px;
+                }                
+            }
+            .material-item-warpper{
+                float: left;
+                margin-right: 60px;
+                &:last-child{
+                    margin-right: 0;
+                    margin-left: 20px;
+                }
+                .material-item{
+                    .info{
+                        display: flex;
+                        margin-top: 10px;
+                        .name{
+                            flex: 1;
+                            font-size: 13px;
+                            color: #FFFFFF;
+                            letter-spacing: -0.6px;
+                            line-height: 23px;
+                        }
+                        .btn{
+                            flex: 0 0 45px;
+                            img{
+                                width: 45px;
+                            }
+                        }
+                    }
+                }
+                .big-item{
+                    .download-pic{
+                        width: 360px;
+                    }
+                }
+                .small-item{
+                    margin-bottom: 15px;
+                    .download-pic{
+                        width: 270px;
+                    }
+                }
+            }
+        }
+    }
     .footer{
+        position: absolute;
+        width: 100%;
+        background: #000000;
         img{
             display: block;
             width: 1200px;
         }
-    }
+        .footer-link{
+            position: absolute;
+            right: 128px;
+            top: 50px;
+            display: block;
+            img{
+                width: 12px;
+                float: left;
+                display: block;
+                margin-top: 2px;
+                margin-right: 5px;
+            }
+            span{
+                display: block;
+                float: left;
+                font-size: 14px;
+                color: #ffffff;
+                text-align: left;
+                line-height: 20px;
+            }
+        }
+    } 
 }

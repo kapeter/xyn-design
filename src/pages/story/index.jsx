@@ -1,45 +1,28 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import Header from '../../component/header'
-import './index.less'
+import { Route, Switch } from "react-router-dom";
 
-import footerGIF from '../../assets/img/footer-1.gif'
-import cover1 from './img/story-cover-1.png'
-import cover2 from './img/story-cover-2.png'
-import cover3 from './img/story-cover-3.png'
-import cover4 from './img/story-cover-4.png'
+import StoryList from './story-list'
+import StoryOne from './story-one'
+import StoryTwo from './story-two'
+import StoryThree from './story-three'
+import StoryFour from './story-four'
 
 class Story extends React.Component {
+    constructor(props) {
+        super(props);
+    }
+
     render() {
         return (
-            <div className="story">
-                <Header />
-                <section className="content clearfix">
-                    <Link className="story-link" to="/story/1">
-                        <img src={cover1} alt=""/>
-                    </Link>
-                    <Link className="story-link" to="/story/2">
-                        <img src={cover2} alt=""/>
-                    </Link>
-                    <Link className="story-link" to="/story/3">
-                        <img src={cover3} alt=""/>
-                    </Link>
-                    <Link className="story-link" to="/story/4">
-                        <img src={cover4} alt=""/>
-                    </Link>
-                </section>
-                <div className="story-banner">
-                    <section className="content">  
-                        <p style={{width: 570}}>
-                            The four stories are connected to the key points 
-                            that help children to understand DESIGN and 
-                            CRITIQUE, meanwhile lead to the workshop activities.
-                        </p> 
-                    </section>
-                </div>
-                <footer className="footer">
-                    <img src={footerGIF} />
-                </footer>
+            <div>
+                <audio src={require("../../assets/audio/story.mp3")} loop autoPlay></audio>
+                <Switch>
+                    <Route path="/story" exact component={StoryList} />
+                    <Route path="/story/1"  component={StoryOne} />
+                    <Route path="/story/2"  component={StoryTwo} />
+                    <Route path="/story/3"  component={StoryThree} />
+                    <Route path="/story/4"  component={StoryFour} />
+                </Switch>            
             </div>
         )
     }

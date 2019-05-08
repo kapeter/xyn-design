@@ -1,9 +1,11 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Header from '../../component/header'
 import './index.less'
 
 import footerGIF from '../../assets/img/footer-3.gif'
 import avatar from "../../assets/img/avatar.png"
+import arrow from '../../assets/img/gray-arrow.gif'
 
 class Contact extends React.Component {
     render() {
@@ -27,6 +29,14 @@ So far there is no such a discussion in children’s pedagogical context about a
                 </section>
                 <footer className="footer">
                     <img src={footerGIF} />
+                    <Link className="footer-link" to="/activity" style={{ top: -40 }}>
+                        <img src={arrow} />
+                        <span>Go to <br />Activity!</span>
+                    </Link>
+                    <Link className="footer-link" to="/story" style={{ top: 50, right: 168 }}>
+                        <img src={arrow} />
+                        <span>Go to <br />Story!</span>
+                    </Link>
                 </footer>
             </div>
         )

@@ -1,48 +1,108 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Header from '../../component/header'
+import Top from '../../component/top'
 import './index.less'
 
 import footerGIF from '../../assets/img/footer-3.gif'
-import banner from "./img/one/banner.jpg"
+import downloadBtn from '../../assets/img/download-btn.png'
+import arrow from '../../assets/img/gray-arrow.gif'
+import redArrow from '../../assets/img/red-arrow.gif'
 
 class ActivityOne extends React.Component {
     render() {
         return (
             <div className="activity-content activity-one">
                 <Header />
-                <div className="banner">
-                    <img src={banner} />
-                    <div className="banner-content">
-                        <div class="nes-container is-dark with-title">
-                            <p class="title">MISSION!</p>
-                            <p>
-                                Let’s start the DESIGN practice from observation!<br />
-                                Have you noticed we have a lot of bottles here? Are you curious about what we are going to do with them?<br />
-                                The first thing . . . You need to guess!
-                            </p>
+                <div style={{background: "#9b83a3" }}>
+                    <div className="para-content">
+                        <img src={require("./img/one/act1-banner.png")} alt=""/>
+                    </div>
+                </div>
+                <div style={{background: "#472d4f" }}>
+                    <div className="para-content">
+                        <img src={require("./img/one/act1-1.png")} alt=""/>
+                    </div>
+                </div>
+                <div style={{background: "#8e8e8e" }}>
+                    <div className="para-content">
+                        <img src={require("./img/one/act1-2.png")} alt=""/>
+                    </div>
+                </div>
+                <div className="material-download">
+                    <div className="para-content">
+                        <div className="title">
+                            <img src={require("./img/computer.png")} alt=""/>
+                            <span>MATERIAL DOWNLOAD</span>
+                        </div>
+                        <div className="material-list clearfix">
+                            <Link className="download-link" to="/download">
+                                <img src={redArrow} />
+                                <span>Find More <br/>workshop <br/>materials!</span>
+                            </Link>
+                            <div className="material-item-warpper">
+                                <div className="material-item big-item">
+                                    <img src={require("./img/one/act1-down-1.png")} className="download-pic" />
+                                    <div className="info">
+                                        <div className="name"></div>
+                                        <div className="btn">
+                                            <a href="javascript:;">
+                                                <img src={downloadBtn} />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="material-item-warpper">
+                                <div className="material-item big-item">
+                                    <img src={require("./img/one/act1-down-2.png")} className="download-pic" />
+                                    <div className="info">
+                                        <div className="name"></div>
+                                        <div className="btn">
+                                            <a href="javascript:;">
+                                                <img src={downloadBtn} />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="material-item-warpper">
+                                <div className="material-item small-item">
+                                    <img src={require("./img/one/act1-down-3.png")} className="download-pic" />
+                                    <div className="info">
+                                        <div className="name">Story</div>
+                                        <div className="btn">
+                                            <a href="javascript:;">
+                                                <img src={downloadBtn} />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="material-item small-item">
+                                    <img src={require("./img/one/act1-down-4.png")} className="download-pic" />
+                                    <div className="info">
+                                        <div className="name">Workshop <br/> Instruction </div>
+                                        <div className="btn">
+                                            <a href="javascript:;">
+                                                <img src={downloadBtn} />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div style={{ background: "#472D4F", padding: "70px 0" }}>
-                    <div className="para-content">
-                        <div className="nes-balloon from-right" style={{width: 1000, color: "#000"}}>
-                            <h3 style={{fontSize: 17}}>
-                                <i className="nes-icon is-small star"></i>MISSION1<i className="nes-icon is-small star"></i>
-                            </h3>
-                            <p style={{ marginBottom: 30 }}>Take one bottle each. Observe and determine what were these bottles used for!</p>
-                            <p>Try to touch, feel and smell. What have you found? Write down or draw, in which situation you would use this bottle. </p>
-                        </div>
-                        <div className="nes-balloon from-left" style={{width: 610, color: "#000", margin: "70px 0 0 330px"}}>
-                            <h3 style={{fontSize: 17}}>
-                                <i className="nes-icon is-small star"></i>MISSION2<i className="nes-icon is-small star"></i>
-                            </h3>
-                            <p> In these bottles, there is one that is not so well designed, you need to find it out! Discuss together and tell me why you choose that one. </p>
-                        </div>
-                    </div> 
-                </div>               
                 <footer className="footer">
-                    <img src={footerGIF} />
+                    <div className="para-content">
+                        <img src={footerGIF} />
+                        <Link className="footer-link" to="/story">
+                            <img src={arrow} />
+                            <span>Back to <br />Story!</span>
+                        </Link>
+                    </div>
                 </footer>
+                <Top></Top>
             </div>
         )
     }

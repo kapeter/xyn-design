@@ -1,9 +1,12 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Header from '../../component/header'
 import Dialog from '../../component/dialog'
 import './index.less'
 
 import allBg from './img/bg.png'
+import arrow from '../../assets/img/gray-arrow.gif'
+
 
 const characterDesc = [
     "Mike is 7 years old. The other kids call him Mr.Mistake, because he often makes mistakes. Mike  he was born with a genetic disease which made him forgetful, a bit slow and unable to focus.",
@@ -151,6 +154,10 @@ class Character extends React.Component {
                     />
                 </section>
                 <footer className="footer">
+                    <Link className="footer-link" to="/story">
+                        <img src={arrow} />
+                        <span>Go to <br />Story</span>
+                    </Link>
                 </footer>
 
                 {

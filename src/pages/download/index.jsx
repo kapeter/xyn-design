@@ -10,7 +10,7 @@ import download3 from './img/download-3.png'
 import download4 from './img/download-4.png'
 import download5 from './img/download-5.png'
 import download6 from './img/download-6.png'
-import downloadBtn from './img/download-btn.png'
+import downloadBtn from '../../assets/img/download-btn.png'
 
 
 class Download extends React.Component {

@@ -1,17 +1,13 @@
 .index{
     width: 100%;
     height: 100vh;
-    .footer{
-        img{
-            display: block;
-            width: 1200px;
-        }
-    } 
+
     .swiper-container {
         width: 100%;
         height: 100%;
         .swiper-slide{
             position: relative;
+            height: 100%;
             .main-banner{
                 position: absolute;
                 left: 0;
@@ -22,14 +18,70 @@
                 background-position: center;
                 background-repeat: no-repeat;
             }
-            .content{
-                width: 1200px;
+            .index-pic{
+                display: block;
+                height: 100%;
+                margin: 0 auto;
+            }
+            .index-content{
+                width: 1440px;
+                height: 100vh;
                 margin: 0 auto;
                 font-size: 20px;
                 color: #000000;
                 letter-spacing: -0.92px;
                 line-height: 36px;
+                padding: 60px 0;
+                position: relative;
+                .person{
+                    position: absolute;
+                    right: 0;
+                    top: 220px;
+                    width: 180px;
+                    img{
+                        display: block;
+                        width: 180px;
+                    }
+                }
+                .steps{
+                    margin-top: 50px;
+                    img{
+                        width: 705px;
+                    }
+                }
             }
+            .footer{
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                img{
+                    display: block;
+                    width: 1200px;
+                }
+                .footer-link{
+                    position: absolute;
+                    right: 128px;
+                    top: 50px;
+                    display: block;
+                    img{
+                        width: 12px;
+                        float: left;
+                        display: block;
+                        margin-top: 2px;
+                        margin-right: 5px;
+                    }
+                    span{
+                        display: block;
+                        float: left;
+                        font-size: 14px;
+                        color: #4A4A4A;
+                        text-align: left;
+                        line-height: 20px;
+                    }
+                }
+            } 
+
         }
     }
 }

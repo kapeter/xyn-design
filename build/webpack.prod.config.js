@@ -2,10 +2,11 @@ const path = require('path')
 const webpack = require('webpack')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 
 module.exports = {
+    mode: "production",
+
     entry: path.resolve(__dirname, '../src/index.js'),
 
     output: {
@@ -24,7 +25,7 @@ module.exports = {
                 loader: 'babel-loader'
             },
             {
-                test: /\.(scss|css|less)/,
+                test: /\.(css|less)/,
                 use: ExtractTextPlugin.extract({
                     fallback: 'style-loader',
                     use: [
@@ -34,19 +35,30 @@ module.exports = {
                 })
             },
             {
-                test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
-                loader: 'url-loader',
-                options: {
-                    limit: 10000,
-                    name: 'img/[name].[hash:7].[ext]'
-                }
-            },
-            {
-                test: /\.(woff|eot|ttf)(\?.*)?$/,
+                test: /\.(png|jpe?g|gif)(\?.*)?$/,
                 loader: 'file-loader',
                 options: {
                     limit: 10000,
-                    name: 'font/[name].[ext]'
+                    name: 'img/[name].[ext]',
+                    publicPath: '/'
+                }
+            },
+            {
+                test: /\.(svg|woff|eot|ttf)(\?.*)?$/,
+                loader: 'url-loader',
+                options: {
+                    name: 'font/[name].[ext]',
+                    limit: 10,
+                    publicPath: '/'
+                },
+            },
+            {
+                test: /\.(mp3)(\?.*)?$/,
+                loader: 'url-loader',
+                options: {
+                    name: 'audio/[name].[ext]',
+                    limit: 10,
+                    publicPath: '/'
                 }
             }
         ]

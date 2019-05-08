@@ -35,11 +35,27 @@ module.exports = {
                 })
             },
             {
-                test: /\.(png|jpe?g|gif|svg|woff|eot|ttf)(\?.*)?$/,
+                test: /\.(png|jpe?g|gif)(\?.*)?$/,
                 loader: 'file-loader',
                 options: {
                     limit: 10000,
                     name: 'img/[name].[ext]'
+                }
+            },
+            {
+                test: /\.(svg|woff|eot|ttf)(\?.*)?$/,
+                loader: 'url-loader',
+                options: {
+                    name: 'font/[name].[ext]',
+                    limit: 10
+                }
+            },
+            {
+                test: /\.(mp3)(\?.*)?$/,
+                loader: 'url-loader',
+                options: {
+                    name: 'audio/[name].[ext]',
+                    limit: 10
                 }
             }
         ]

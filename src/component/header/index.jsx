@@ -3,6 +3,7 @@ import { NavLink, Link } from 'react-router-dom'
 import './index.less'
 
 class Header extends React.Component {
+
     render() {
         return (
             <header className="header clearfix">

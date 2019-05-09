@@ -22,6 +22,10 @@ class Index extends React.Component {
         });
     }
 
+    changeSwiper() {
+        mySwiper.slideNext();
+    }
+
     render() {
         return (
             <div className="index">
@@ -45,7 +49,7 @@ class Index extends React.Component {
                         </div>
                         <div className="swiper-slide">
                             <div className="index-content">
-                                <div className="nes-balloon from-right" style={{marginRight: 100}}>
+                                <div className="nes-balloon from-right" style={{marginRight: 140}}>
                                     <p>There are four stories that are linked to four design activities, which are focusing on different aspects related to critical feedbacks.Adults can use the Story page as the workshop intro and the activity page is the guide. These activities are four generic ways of working, you can always develop your own version!</p>
                                 </div>
                                 <div className="person">
@@ -65,7 +69,7 @@ class Index extends React.Component {
                         </div>
                     </div>
                 </div>
-
+                <div className="controlls" onClick={() => this.changeSwiper()}></div>
             </div>
         )
     }

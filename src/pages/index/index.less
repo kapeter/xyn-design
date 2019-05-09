@@ -24,10 +24,10 @@
                 margin: 0 auto;
             }
             .index-content{
-                width: 1440px;
+                width: 1200px;
                 height: 100vh;
                 margin: 0 auto;
-                font-size: 20px;
+                font-size: 18px;
                 color: #000000;
                 letter-spacing: -0.92px;
                 line-height: 36px;
@@ -51,9 +51,7 @@
                 }
             }
             .footer{
-                position: absolute;
-                left: 0;
-                bottom: 0;
+                position: relative;
                 width: 100%;
                 img{
                     display: block;
@@ -83,5 +81,33 @@
             } 
 
         }
+    }
+
+    .controlls{
+        position: fixed;
+        right: 50px;
+        bottom: 50px;
+        width: 66px;
+        height: 100px;
+        background: url('./img/controller.png') no-repeat;
+        background-size: 100%;
+        cursor: pointer;
+        z-index: 10;
+        &:hover{
+            background: url('./img/controller-hover.png') no-repeat;
+        }
+        animation: upAndDown 2s linear infinite;
+    }
+}
+
+@keyframes upAndDown{
+    0% {
+        bottom: 50px;
+    }
+    50% {
+        bottom: 60px;
+    }
+    100%{
+        bottom: 50px;
     }
 }

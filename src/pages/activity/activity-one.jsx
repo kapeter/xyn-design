@@ -6,8 +6,8 @@ import './index.less'
 
 import footerGIF from '../../assets/img/footer-3.gif'
 import downloadBtn from '../../assets/img/download-btn.png'
-import arrow from '../../assets/img/gray-arrow.gif'
-import redArrow from '../../assets/img/red-arrow.gif'
+import arrow from '../../assets/img/black-gray-arrow.gif'
+import redArrow from '../../assets/img/black-red-arrow.gif'
 
 class ActivityOne extends React.Component {
     render() {

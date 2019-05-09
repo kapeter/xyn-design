@@ -4,7 +4,7 @@ import Header from '../../component/header'
 import Dialog from '../../component/dialog'
 import './index.less'
 
-import allBg from './img/bg.png'
+import allBg from './img/bg.jpg'
 import arrow from '../../assets/img/gray-arrow.gif'
 
 

@@ -49,7 +49,7 @@ class ActivityThree extends React.Component {
                                     <div className="info">
                                         <div className="name"></div>
                                         <div className="btn">
-                                            <a href="javascript:;">
+                                            <a href={require("./file/three/activity3-detailed-information.pdf")} download>
                                                 <img src={downloadBtn} />
                                             </a>
                                         </div>
@@ -62,7 +62,7 @@ class ActivityThree extends React.Component {
                                     <div className="info">
                                         <div className="name"></div>
                                         <div className="btn">
-                                            <a href="javascript:;">
+                                            <a href={require("./file/three/activity3-feedback-report.pdf")} download>
                                                 <img src={downloadBtn} />
                                             </a>
                                         </div>
@@ -75,7 +75,7 @@ class ActivityThree extends React.Component {
                                     <div className="info">
                                         <div className="name">Story</div>
                                         <div className="btn">
-                                            <a href="javascript:;">
+                                            <a href={require("./file/three/story3-download.jpg")} download>
                                                 <img src={downloadBtn} />
                                             </a>
                                         </div>
@@ -86,7 +86,7 @@ class ActivityThree extends React.Component {
                                     <div className="info">
                                         <div className="name">Workshop <br/> Instruction </div>
                                         <div className="btn">
-                                            <a href="javascript:;">
+                                            <a href={require("./file/three/activity3-download.jpg")} download>
                                                 <img src={downloadBtn} />
                                             </a>
                                         </div>
@@ -99,7 +99,7 @@ class ActivityThree extends React.Component {
                 <footer className="footer">
                     <div className="para-content">
                         <img src={footerGIF} />
-                        <Link className="footer-link" to="/story">
+                        <Link className="footer-link" to="/story/3">
                             <img src={arrow} />
                             <span>Back to <br />Story!</span>
                         </Link>

@@ -78,7 +78,7 @@ The shape, the height and the colors, all need to be considered. </p>
                             <img src={require("./img/two/story2-8.gif")} style={{ width: 850, margin: "80px auto", display: "block" }} />
                             <footer className="footer">
                                 <img src={footerGIF} />
-                                <Link className="footer-link" to="/activity">
+                                <Link className="footer-link" to="/activity/2">
                                     <img src={arrow} />
                                     <span>Start <br />Design!</span>
                                 </Link>

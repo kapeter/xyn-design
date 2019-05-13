@@ -25,7 +25,7 @@ class Download extends React.Component {
                     <div className="download-item">
                         <img src={download1} alt=""/>
                         <div className="info">
-                            <a href="javascript:;" className="btn">
+                            <a href={require("./file/sketch-book.pdf")} className="btn">
                                 <img src={downloadBtn} alt=""/>
                             </a>
                             <div className="title">SKETCH BOOK</div>
@@ -34,7 +34,7 @@ class Download extends React.Component {
                     <div className="download-item">
                         <img src={download2} alt=""/>
                         <div className="info">
-                            <a href="javascript:;" className="btn">
+                            <a href={require("./file/feedback-card.pdf")} className="btn">
                                 <img src={downloadBtn} alt=""/>
                             </a>
                             <div className="title">FEEDBACK CARDS</div>
@@ -43,7 +43,7 @@ class Download extends React.Component {
                     <div className="download-item">
                         <img src={download3} alt=""/>
                         <div className="info">
-                            <a href="javascript:;" className="btn">
+                            <a href={require("./file/designlab-sign.pdf")} className="btn">
                                 <img src={downloadBtn} alt=""/>
                             </a>
                             <div className="title">DESIGN LAB SIGN</div>
@@ -52,7 +52,7 @@ class Download extends React.Component {
                     <div className="download-item">
                         <img src={download4} alt=""/>
                         <div className="info">
-                            <a href="javascript:;" className="btn">
+                            <a href={require("./file/characters.pdf")} className="btn" download>
                                 <img src={downloadBtn} alt=""/>
                             </a>
                             <div className="title">CHARACTER CARDS</div>
@@ -61,7 +61,7 @@ class Download extends React.Component {
                     <div className="download-item">
                         <img src={download5} alt=""/>
                         <div className="info">
-                            <a href="javascript:;" className="btn">
+                            <a href={require("./file/workshop-instruction.pdf")} className="btn">
                                 <img src={downloadBtn} alt=""/>
                             </a>
                             <div className="title">WORKSHOP<br />INSTRUCTION</div>
@@ -70,7 +70,7 @@ class Download extends React.Component {
                     <div className="download-item">
                         <img src={download6} alt=""/>
                         <div className="info">
-                            <a href="javascript:;" className="btn">
+                            <a href={require("./file/space-instruction.pdf")} className="btn">
                                 <img src={downloadBtn} alt=""/>
                             </a>
                             <div className="title">SPACE SETTING<br />INSTRUCTION </div>

@@ -57,6 +57,14 @@ module.exports = {
                     name: 'audio/[name].[ext]',
                     limit: 10
                 }
+            },
+            {
+                test: /\.(pdf)(\?.*)?$/,
+                loader: 'url-loader',
+                options: {
+                    name: 'file/[name].[ext]',
+                    limit: 10
+                }
             }
         ]
     },

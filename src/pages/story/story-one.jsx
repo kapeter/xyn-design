@@ -87,7 +87,7 @@ class StoryOne extends React.Component {
                             <img src={require("./img/one/story1-9.gif")} style={{ width: 850, margin: "80px auto", display: "block" }} />
                             <footer className="footer">
                                 <img src={footerGIF} />
-                                <Link className="footer-link" to="/activity">
+                                <Link className="footer-link" to="/activity/1">
                                     <img src={arrow} />
                                     <span>Start <br />Design!</span>
                                 </Link>

@@ -98,7 +98,7 @@ class StoryFour extends React.Component {
                             <img src={require("./img/four/story4-13.gif")} style={{ width: 850, margin: "80px auto", display: "block" }} />
                             <footer className="footer">
                                 <img src={footerGIF} />
-                                <Link className="footer-link" to="/activity">
+                                <Link className="footer-link" to="/activity/4">
                                     <img src={arrow} />
                                     <span>Start <br />Design!</span>
                                 </Link>

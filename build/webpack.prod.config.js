@@ -60,6 +60,14 @@ module.exports = {
                     limit: 10,
                     publicPath: '/'
                 }
+            },
+            {
+                test: /\.(pdf)(\?.*)?$/,
+                loader: 'url-loader',
+                options: {
+                    name: 'file/[name].[ext]',
+                    limit: 10
+                }
             }
         ]
     },

@@ -56,7 +56,21 @@ class Index extends React.Component {
                                     <img src={require('./img/index-person.png')} />
                                 </div>
                                 <div className="steps">
-                                    <img src={require('./img/index-steps.gif')} />
+                                    <div style={{ float: 'left' }}>
+                                        <img src={require('./img/dock.png')} style={{ height: 320 }} />
+                                    </div>
+                                    <div style={{ float: 'left', marginLeft: 60 }}>
+                                        <h5 className="title">STEP</h5>
+                                        <Link className="step-link" to="/character">
+                                            <span>1</span>Character
+                                        </Link>
+                                        <Link className="step-link" to="/story">
+                                            <span>2</span>Story
+                                        </Link>
+                                        <Link className="step-link" to="/activity">
+                                            <span>3</span>Activity
+                                        </Link>
+                                    </div>
                                 </div>
                             </div>
                             <footer className="footer" style={{background: "#ffffff" }}>

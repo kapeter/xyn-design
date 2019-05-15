@@ -38,7 +38,7 @@ class StoryThree extends React.Component {
                             <div className="para-content" style={{ padding: "150px 0" }}>
                                 <div style={{ float: "left" }}>
                                     <img src={require("./img/three/story3-1.png")} style={{ width: 460 }} />
-                                    <p style={{ width: 460, marginTop: 30 }}>Hello, I am Chichi.Dr.Design and me are visiting our object collection. </p>
+                                    <p style={{ width: 460, marginTop: 30 }}>Little Right and Little Wrong are arguing something! </p>
                                 </div>
                                 <div style={{ float: "right" }}>
                                     <img src={require("./img/three/story3-2.gif")} style={{ width: 600 }} />
